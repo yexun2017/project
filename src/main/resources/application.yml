@@ -1,0 +1,15 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/project-o2o?useSSL=false&useUnicode=true&characterEncoding=utf8
+        username: root
+        password:
+        tomcat :
+          max-active : 100
+          max-idle : 200
+          initialSize : 20
+server:
+  port: 8080
+mybatis:
+  config-location :  classpath:mybatis-config.xml
+  mapper-locations :  classpath:mapper/*.xml
